@@ -50,7 +50,7 @@ def fetchdata():
     select_employee_query = "SELECT emp_id, first_name, last_name, pri_skill, location, job, salary, phone_no FROM employee WHERE emp_id =%s"
     cursor = db_conn.cursor()
     
-    cursor.execute(select_employee_query,(emp_id)
+    cursor.execute(select_employee_query,(emp_id))
     db_conn.commit()
     
     for i in cursor:
