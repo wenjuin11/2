@@ -54,7 +54,7 @@ def fetchdata():
     db_conn.commit()
     
     for i in cursor:
-        emp_ID = i[0]
+        emp_id = i[0]
         first_name = i[1]
         last_name = i[2]
         pri_skill = i[3]
