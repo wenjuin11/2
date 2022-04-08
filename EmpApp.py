@@ -47,7 +47,7 @@ def back():
 def fetchdata():
 
     emp_id = request.form['emp_id']
-    select_employee_query = "SELECT emp_id, first_name, last_name, pri_skill, location, job, salary, phone_no WHERE emp_id =%s"
+    select_employee_query = "SELECT emp_id, first_name, last_name, pri_skill, location, job, salary, phone_no FROM employee WHERE emp_id =%s"
     cursor = db_conn.cursor()
     
     cursor.execute(select_employee_query,(emp_id)
